@@ -91,6 +91,13 @@ img {
    width: 70px;
    height: 70px;
 }
+
+
+.projetos ul{
+
+}
+
+
 @keyframes pulsar {
     0% {
         transform: scale(1);
