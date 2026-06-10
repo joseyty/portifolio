@@ -3,6 +3,8 @@ body{
     padding: 0;
     background-color: #000000;
     color: #f0f0f0;
+    overflow: hidden;
+    cursor: url('') 16 16, auto;
 }
 
 
@@ -77,7 +79,10 @@ img {
     box-shadow: 0 0 10px #f0f0f0;
 }
 
-
+.pulsar3{
+    animation: pulsar3 2s infinite ease-in-out;
+    display: inline-block;
+}
 
 .pulsar2{
     animation: pulsar2 2s infinite ease-in-out;
@@ -92,6 +97,13 @@ img {
    height: 70px;
 }
 
+.mudarcolor{
+    animation: mudarcolor 2s infinite ease-in-out;
+    display: inline-block;
+}
+footer{
+ text-align: center;
+}
 
 .projetos ul{
 
@@ -131,5 +143,39 @@ img {
         transform: scale(1);
         box-shadow: 0 0 10px #f7f455, 0 0 20px #e6ff05;
         filter: drop-shadow(0 0 8px #ffee00);
+    }
+}
+
+
+
+@keyframes pulsar3 {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
+        filter: drop-shadow(0 0 8px #ffffff);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 20px #ffb6d7, 0 0 40px #ffb6d7;
+        filter: drop-shadow(0 0 15px #ffb6d7);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
+        filter: drop-shadow(0 0 8px #ffffff);
+    }
+}
+
+
+
+@keyframes mudarcolor{
+    0% {
+        color: #f0f0f0;
+    }
+    50% {
+        color: #222222;
+    }
+    100% {
+        color: #f0f0f0;
     }
 }
