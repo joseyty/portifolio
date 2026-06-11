@@ -79,6 +79,11 @@ img {
     box-shadow: 0 0 10px #f0f0f0;
 }
 
+.pulsar4{
+    animation: pulsar4 2s infinite ease-in-out;
+    display: inline-block;
+}
+
 .pulsar3{
     animation: pulsar3 2s infinite ease-in-out;
     display: inline-block;
@@ -163,6 +168,26 @@ footer{
         transform: scale(1);
         box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
         filter: drop-shadow(0 0 8px #ffffff);
+    }
+}
+
+
+
+@keyframes pulsar4 {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 10px #390a3f, 0 0 20px #2e0a42;
+        filter: drop-shadow(0 0 8px #380d4d);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 20px #8400ff, 0 0 40px #b700ff;
+        filter: drop-shadow(0 0 15px #6101a1);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 10px #3c0b58, 0 0 20px #2b083f;
+        filter: drop-shadow(0 0 8px #410b57);
     }
 }
 
